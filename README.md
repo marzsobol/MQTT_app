@@ -46,4 +46,15 @@ ifconfig
 ```
 username and password of broker. 
 
+## Simulating MQTT client
+You can use ESP or another computer (with Linux I recommand it may be even the same VM as broker) in the same network. To simulate MQTT client behaviour type:
+To publish for group one:
+```sh
+mosquitto_pub -d -u username -P catato -t answer/group/1 -m 27
+```
+To subscribe for group one:
+```sh
+mosquitto_sub -d -u wsn -P catato -t group/1
+```
+
 Enjoy :D
