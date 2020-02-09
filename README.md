@@ -36,7 +36,7 @@ mosquitto
 
 Application sends to every group (it's now set to 5) random number. Every gruop is pleased to take a message on topic group/X, where X is number of group (from 0 - 4). When group received the message, it has to send this same number it got to topic: answer/group/X. When everythong is fine, in the proper place the image should change to Mission complete. 
 
-This picture presents the situation, when group number one received number and then send it to python client. 
+This picture presents the situation, when no group reached the goal. 
 ![](app.png)
 
 To make this project work you need to change: 
