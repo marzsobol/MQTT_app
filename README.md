@@ -54,7 +54,7 @@ mosquitto_pub -d -u username -P catato -t answer/group/1 -m 27
 ```
 To subscribe for group one:
 ```sh
-mosquitto_sub -d -u wsn -P catato -t group/1
+mosquitto_sub -d -u username -P catato -t group/1
 ```
 
 Enjoy :D
